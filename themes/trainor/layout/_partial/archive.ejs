@@ -12,9 +12,9 @@
       <% } %>
       <% last = year; %>
       <section class="container">
-        <div class="row">
+        <h4 class="row">
           <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
-        </div>
+        </h4>
         <div class="row">
     <% } %>
     <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>

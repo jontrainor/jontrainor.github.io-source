@@ -1,13 +1,14 @@
 <%- partial('_partial/head') %>
 <body>
   <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-  <div class="outer">
-    <section id="main"><%- body %></section>
+  <div class="outer row p-4">
+    <section id="main" class="col-lg-9"><%- body %></section>
     <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-      <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+      <div class="col-lg-3">
+        <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+      </div>
     <% } %>
   </div>
   <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-  <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
   <%- partial('_partial/after-footer') %>
 </html>

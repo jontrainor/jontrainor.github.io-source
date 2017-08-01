@@ -2,10 +2,15 @@
   <% if (theme.sidebar === 'bottom'){ %>
     <%- partial('_partial/sidebar') %>
   <% } %>
-  <div class="outer">
+  <div class="outer row">
+  <!---
     <div id="footer-info" class="inner">
       &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
       <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-    <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Ajon.trainor%3Aplaylist%3A3QVsJzWVRH2A5UyFvaHMVI" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></div>
+    -->
+    <div class="col-md-3 mx-auto">
+      <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Ajon.trainor%3Aplaylist%3A3QVsJzWVRH2A5UyFvaHMVI" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></div>
+    </div>
+  </div>
 </footer>
